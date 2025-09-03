@@ -1,27 +1,27 @@
 class TableAndChairs{
    public static void main(String[] args){
       
-      for(int i=1; i<=7; i++){
-         for(int j=1; j<=13; j++){
-              if((i<4)&&(j==1||j==13))//
+      for(int i=1; i<=6; i++){
+         for(int j=1; j<=22; j++){
+              if((i<=2)&&(j==1||j==22))//
               {
-               System.out.print(" X ");
+               System.out.print("X");
               }
-              else if((i==4)&&(j==1||(j>=5 && j<=9)||j==13))//
+              else if((i==3)&&(j>=7 && j<=16)||j==1||j==22)//
               {
-               System.out.print(" X ");
+               System.out.print("X");
               }
-              else if((i==5)&&(j<=3||j==5||j==9||j>=11))
+              else if((i==4)&&(j<=5||j==7||j==16||j>=18))//
               {
-               System.out.print(" X ");
+               System.out.print("X");
               }
-              else if((i==6||i==7)&&(j==1||j==3||j==5||j==9||j==11||j==13))
+              else if((i==5||i==6)&&(j==5||j==7||j==16||j==18||j==22))
               {
-               System.out.print(" X ");
+               System.out.print("X");
               }
               else
               {
-               System.out.print("   ");
+               System.out.print(" ");
               }
          }
       System.out.println();
